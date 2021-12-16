@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Limited Sneaker | CA</title>
+        <link rel="icon" href="images/logo.png">
+        <link rel="stylesheet" href="css/style.css">
+        <script src ="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+        <script src="controller.js"></script>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+            rel="stylesheet">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+
+    <body>
+
+        <!-- start header section -->
+        <div class="container">
+            <div class="navbar">
+                <div class="logo">
+                    <a href="index.html"><img src="images/logo.png" alt="logo" width="250px"></a>
+                </div>
+                <nav>
+                    <ul id="MenuItems">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="index.html">Contact</a></li>
+                        <li><a href="account.html">Login/Register</a></li>
+                    </ul>
+                </nav>
+                <a href="cart.html"><img src="images/assets/cart.png" alt="cart" width="30px" height="30px"></a>
+                <img src="images/assets/menu.png" alt="menu" class="menu-icon">
+            </div>
+        </div>
+        <!-- end header section -->
+
+        <!-- start single product details -->
+        <div class="small-container single-product">
+            <div class="row">
+                <div class="col-2">
+                    <img src="images/airmax2090/0.jpeg" alt="gallery-1" width="100%" id="productImg">
+
+                    <div class="small-img-row">
+                        <div class="small-img-col">
+                            <img src="images/airmax2090/2.png" alt="gallery-1" width="100%" class="small-img">
+                        </div>
+                        <div class="small-img-col">
+                            <img src="images/airmax2090/3.png" alt="gallery-2" width="100%" class="small-img">
+                        </div>
+                        <div class="small-img-col">
+                            <img src="images/airmax2090/4.png" alt="gallery-3" width="100%" class="small-img">
+                        </div>
+                        <div class="small-img-col">
+                            <img src="images/airmax2090/5.png" alt="gallery-4" width="100%" class="small-img">
+                        </div>
+                        <div class="small-img-col">
+                            <img src="images/airmax2090/6.png" alt="gallery-4" width="100%" class="small-img">
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-2">
+                    <p>Home / Nike</p>
+                    <h1 id="pname">Air Max 2090 by Nike</h1>
+                    <h4>$180</h4>
+                    <select id="size">
+                        <option>Select Size</option>
+                        <option>8</option>
+                        <option>9</option>
+                        <option>10</option>
+                        <option>11</option>
+                        <option>12</option>
+                        <option>13</option>
+                        <option>14</option>
+                    </select>
+                    <input type="number" id="quan" value="1">
+
+                    <button class='cartlist' product_id='product2' product_price='$180.00' 
+                            product_src='images/airmax2090/0.jpeg'>
+                        <span>Add To Cart</span>
+                    </button>
+
+                    <div id="snackbar"></div>
+
+                    <h3>Product Details <i class="fa fa-indent"></i></h3>
+                    <br>
+                    <p>Bring the past into the future with the Nike Air Max 2090, a tech-like shoe that's 
+                        inspired by the iconic Air Max 90.Revolutionary Nike Air cushioning underfoot adds 
+                        unparalleled comfort, so you can go all day long.Shined TPU accents on the heel and 
+                        deco stitching details blend with classic design cues for a look that goes beyond.</p>
+                </div>
+            </div>
+        </div>
+        <!-- end single product details -->
+
+        <!-- start title -->
+        <div class="small-container">
+            <div class="row row-2">
+                <h2>Related Products</h2>
+                <p>View More</p>
+            </div>
+        </div>
+        <!-- end title -->
+
+        <div class="small-container">
+            <!-- start all products products -->
+            <div class="row">
+                <div class="col-4">
+                    <img src="images/latestshoes/0.jpeg" alt="product-5">
+                    <h4>Nike Air Zoom G.T. Run</h4>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-o"></i>
+                    </div>
+                    <p>$230</p>
+                </div>
+                <div class="col-4">
+                    <img src="images/latestshoes/1.jpeg" alt="product-6">
+                    <h4>Nike Air Zoom Pegasus 38</h4>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half-o"></i>
+                    </div>
+                    <p>$170</p>
+                </div>
+                <div class="col-4">
+                    <img src="images/latestshoes/6.jpeg" alt="product-11">
+                    <h4>Nike Air Max 95</h4>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-o"></i>
+                    </div>
+                    <p>$235</p>
+                </div>
+                <div class="col-4">
+                    <img src="images/latestshoes/7.jpeg" alt="product-12">
+                    <h4>Nike Air Max Plus</h4>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-o"></i>
+                    </div>
+                    <p>$235</p>
+                </div>
+            </div>
+            <!-- end all products products -->
+        </div>
+
+        <!-- start footer -->
+        <div class="footer" id="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="footer-col-1">
+                        <h3>Download Our App</h3>
+                        <p>Download App for Android and IOS mobile phone.</p>
+                        <div class="app-logo">
+                            <img src="images/assets/play-store.png" alt="play-store">
+                            <img src="images/assets/app-store.png" alt="app-store">
+                        </div>
+                    </div>
+                    <div class="footer-col-2">
+                        <img src="images/logo.png" alt="logo-white">
+                        <p>Our Purpose is to provide Latest Sneakers from the Comfort of your Home.</p>
+                    </div>
+                    <div class="footer-col-3">
+                        <h3>Useful Links</h3>
+                        <ul>
+                            <li>Coupons</li>
+                            <li>Blog Post</li>
+                            <li>Return Policy</li>
+                            <li>Membership</li>
+                        </ul>
+                    </div>
+                    <div class="footer-col-4">
+                        <h3>Follow Us</h3>
+                        <ul>
+                            <li>Facebook</li>
+                            <li>Twitter</li>
+                            <li>Instagram</li>
+                            <li>Youtube</li>
+                        </ul>
+                    </div>
+                </div>
+                <hr>
+                <p class="copyright">Copyright
+                    <script>document.write(new Date().getFullYear())</script> - Jayesh Saini
+                </p>
+            </div>
+        </div>
+        <!-- end footer -->
+    </body>
+
+</html>

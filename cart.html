@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Limited Sneaker | CA</title>
+        <link rel="icon" href="images/logo.png">
+        <link rel="stylesheet" href="css/style.css">
+        <script src ="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+        <script src="controller.js"></script>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+            rel="stylesheet">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+
+    <body>
+
+        <!-- start header section -->
+        <div class="container">
+            <div class="navbar">
+                <div class="logo">
+                    <a href="index.html"><img src="images/logo.png" alt="logo" width="250px"></a>
+                </div>
+                <nav>
+                    <ul id="MenuItems">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="index.html">Contact</a></li>
+                        <li><a href="account.html">Login/Register</a></li>
+                    </ul>
+                </nav>
+                <a href="cart.html"><img src="images/assets/cart.png" alt="cart" width="30px" height="30px"></a>
+                <img src="images/assets/menu.png" alt="menu" class="menu-icon">
+            </div>
+        </div>
+        <!-- end header section -->
+
+    <!-- start cart items details -->
+    <div class="small-container cart-page">
+        <table id="cart">
+            <tr>
+                <th>Product</th>
+                <th style="text-align: center;">Quantity</th>
+                <th>Subtotal</th>
+            </tr>
+            
+        </table>
+
+
+        <div id='cart_list' class='col-s'>
+            <table id='cart_list_item' border='0'></table>
+        </div>
+
+        <div id="snackbar"></div>
+
+
+        <div class="total-price">
+            <table>
+                <tr>
+                    <td>Subtotal</td>
+                    <td id="subTotal">$0</td>
+                </tr>
+                <tr>
+                    <td>Tax</td>
+                    <td id="tax">$0</td>
+                </tr>
+                <tr>
+                    <td>Total</td>
+                    <td id="total">$0</td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="checkout">
+            <button onclick="checkout()" class="btn">Checkout &#8594;</button>
+        </div>
+    </div>
+    <!-- end cart items details -->
+
+    <!-- start footer -->
+    <div class="footer" id="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-1">
+                    <h3>Download Our App</h3>
+                    <p>Download App for Android and IOS mobile phone.</p>
+                    <div class="app-logo">
+                        <img src="images/assets/play-store.png" alt="play-store">
+                        <img src="images/assets/app-store.png" alt="app-store">
+                    </div>
+                </div>
+                <div class="footer-col-2">
+                    <img src="images/logo.png" alt="logo-white">
+                    <p>Our Purpose is to provide Latest Sneakers from the Comfort of your Home.</p>
+                </div>
+                <div class="footer-col-3">
+                    <h3>Useful Links</h3>
+                    <ul>
+                        <li>Coupons</li>
+                        <li>Blog Post</li>
+                        <li>Return Policy</li>
+                        <li>Membership</li>
+                    </ul>
+                </div>
+                <div class="footer-col-4">
+                    <h3>Follow Us</h3>
+                    <ul>
+                        <li>Facebook</li>
+                        <li>Twitter</li>
+                        <li>Instagram</li>
+                        <li>Youtube</li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <p class="copyright">Copyright
+                <script>document.write(new Date().getFullYear())</script> - Jayesh Saini
+            </p>
+        </div>
+    </div>
+    <!-- end footer -->
+</body>
+
+</html>

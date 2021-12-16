@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Limited Sneaker | CA</title>
+        <link rel="icon" href="images/logo.png">
+        <link rel="stylesheet" href="css/style.css">
+        <script src ="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+        <script src="controller.js"></script>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet"> 
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+
+        <!-- start header section -->
+    <div class="header">
+        <div class="container">
+            <div class="navbar">
+                <div class="logo">
+                    <a href="index.html"><img src="images/logo.png" alt="logo" width="250px"></a>
+                </div>
+                <nav>
+                    <ul id="MenuItems">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="#footer">Contact</a></li>
+                        <li><a href="account.html">Login/Register</a></li>
+                    </ul>
+                </nav>
+                <a href="cart.html"><img src="images/assets/cart.png" alt="cart" width="30px" height="30px"></a>
+                <img src="images/assets/menu.png" alt="menu" class="menu-icon">
+            </div>
+        </div>
+    </div>
+   <!-- end header section -->
+
+   <!-- start account page -->
+   <div class="account-page">
+       <div class="container">
+           <div class="row">
+               <div class="col-2">
+                   <img id="top" src="images/assets/image2.png" alt="image1" width="100%">
+               </div>
+               <div class="col-2">
+                   <div class="form-container">
+                       <div class="form-btn">
+                           <span onclick="login()">Login</span>
+                           <span onclick="register()">Register</span>
+                           <hr id="indicator">
+                        </div>
+
+                        <form id="loginForm">
+                            <input type="text" placeholder="Username">
+                            <input type="password" placeholder="Password">
+                            <button type="submit" class="btn">Login</button>
+                            <a href="">Forgot Password</a>
+                        </form>
+
+                        <form id="registerForm">
+                            <input type="text" placeholder="Username">
+                            <input type="email" placeholder="Email">
+                            <input type="password" placeholder="Password">
+                            <button type="submit" class="btn">Register</button>
+                        </form>
+                   </div>
+               </div>
+           </div>
+       </div>
+   </div>
+   <!-- end account page -->
+
+   <!-- start footer -->
+   <div class="footer" id="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-1">
+                    <h3>Download Our App</h3>
+                    <p>Download App for Android and IOS mobile phone.</p>
+                    <div class="app-logo">
+                        <img src="images/assets/play-store.png" alt="play-store">
+                        <img src="images/assets/app-store.png" alt="app-store">
+                    </div>
+                </div>
+                <div class="footer-col-2">
+                    <img src="images/logo.png" alt="logo-white">
+                    <p>Our Purpose is to provide Latest Sneakers from the Comfort of your Home.</p>
+                </div>
+                <div class="footer-col-3">
+                    <h3>Useful Links</h3>
+                    <ul>
+                        <li>Coupons</li>
+                        <li>Blog Post</li>
+                        <li>Return Policy</li>
+                        <li>Membership</li>
+                    </ul>
+                </div>
+                <div class="footer-col-4">
+                    <h3>Follow Us</h3>
+                    <ul>
+                        <li>Facebook</li>
+                        <li>Twitter</li>
+                        <li>Instagram</li>
+                        <li>Youtube</li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <p class="copyright">Copyright
+                <script>document.write(new Date().getFullYear())</script> - Jayesh Saini
+            </p>
+        </div>
+    </div>
+    <!-- end footer -->
+
+    <!-- js for toggle menu -->
+    <script>
+        var MenuItems = document.getElementById("MenuItems");
+
+        MenuItems.style.maxHeight = "0px";
+
+        function menuToggle() {
+        if(MenuItems.style.maxHeight == "0px") {
+            MenuItems.style.maxHeight = "200px";
+        } else {
+            MenuItems.style.maxHeight = "0px";
+        }
+        }
+    </script>
+
+    <!-- js for toggle form -->
+    <script>
+        var loginForm = document.getElementById("loginForm");
+        var registerForm = document.getElementById("registerForm");
+        var indicator = document.getElementById("indicator");
+
+        function register() {
+            registerForm.style.transform = "translateX(-300px)";
+            loginForm.style.transform = "translateX(-300px)";
+            indicator.style.transform = "translateX(100px)";
+        }
+
+        function login() {
+            registerForm.style.transform = "translateX(0px)";
+            loginForm.style.transform = "translateX(0px)";
+            indicator.style.transform = "translateX(0px)";
+        }
+    </script>
+</body>
+</html>

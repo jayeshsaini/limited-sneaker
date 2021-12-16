@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Limited Sneaker | CA</title>
+        <link rel="icon" href="images/logo.png">
+        <link rel="stylesheet" href="css/style.css">
+        <script src ="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+        <script src="controller.js"></script>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+
+    <body>
+
+        <!-- start header section -->
+        <div class="container">
+            <div class="navbar">
+                <div class="logo">
+                    <a href="index.html"><img src="images/logo.png" alt="logo" width="250px"></a>
+                </div>
+                <nav>
+                    <ul id="MenuItems">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="index.html">Contact</a></li>
+                        <li><a href="account.html">Login/Register</a></li>
+                    </ul>
+                </nav>
+                <a href="cart.html"><img src="images/assets/cart.png" alt="cart" width="30px" height="30px"></a>
+                <img src="images/assets/menu.png" alt="menu" class="menu-icon">
+            </div>
+        </div>
+        <!-- end header section -->
+
+        <!-- start single product details -->
+        <div class="small-container single-product">
+            <div class="row">
+                <div class="col-2">
+                    <img src="images/jordan11/1.jpg" alt="gallery-1" width="100%" id="productImg">
+
+                    <div class="small-img-row">
+                        <div class="small-img-col">
+                            <img src="images/jordan11/2.jpg" alt="gallery-1" width="100%" class="small-img">
+                        </div>
+                        <div class="small-img-col">
+                            <img src="images/jordan11/3.jpg" alt="gallery-2" width="100%" class="small-img">
+                        </div>
+                        <div class="small-img-col">
+                            <img src="images/jordan11/4.jpg" alt="gallery-3" width="100%" class="small-img">
+                        </div>
+                        <div class="small-img-col">
+                            <img src="images/jordan11/5.jpg" alt="gallery-4" width="100%" class="small-img">
+                        </div>
+                        <div class="small-img-col">
+                            <img src="images/jordan11/6.jpg" alt="gallery-4" width="100%" class="small-img">
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-2">
+                    <p>Home / Jordans</p>
+                    <h1 id="pname">Air Jordan 11 by Nike</h1>
+                    <h4>$290</h4>
+                    <select id="size">
+                        <option>Select Size</option>
+                        <option>8</option>
+                        <option>9</option>
+                        <option>10</option>
+                        <option>11</option>
+                        <option>12</option>
+                        <option>13</option>
+                        <option>14</option>
+                    </select>
+                    <input type="number" id="quan" value="1">
+
+                    <button class='cartlist' product_id='product1' product_price='$290.00' 
+                            product_src='images/jordan11/1.jpg'>
+                        <span>Add To Cart</span>
+                    </button>
+
+                    <div id="snackbar"></div>
+
+                    <h3>Product Details <i class="fa fa-indent"></i></h3>
+                    <br>
+                    <p>What's cooler than cool? 'Cool Grey', of course. Taking inspiration from the original that MJ 
+                        wore en route to his fourth championship ring, the Air Jordan 11 'Cool Grey' is back for its 
+                        heralded 20th anniversary. This classic colourway, worn by MJ during his return to the league, 
+                        features premium patent and nubuck leathers, full-length Nike Air cushioning and an icy outsole.</p>
+                </div>
+            </div>
+        </div>
+        <!-- end single product details -->
+
+        <!-- start title -->
+        <div class="small-container">
+            <div class="row row-2">
+                <h2>Related Products</h2>
+                <p>View More</p>
+            </div>
+        </div>
+        <!-- end title -->
+
+        <div class="small-container">
+            <!-- start all products products -->
+            <div class="row">
+                <div class="col-4">
+                    <img src="images/latestshoes/3.jpeg" alt="product-8">
+                    <h4>Nike Air Force 1 Low'07</h4>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-o"></i>
+                    </div>
+                    <p>$170</p>
+                </div>
+                <div class="col-4">
+                    <img src="images/latestshoes/4.jpeg" alt="product-9">
+                    <h4>Nike Air Huarache</h4>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-o"></i>
+                    </div>
+                    <p>$145</p>
+                </div>
+                <div class="col-4">
+                    <img src="images/latestshoes/5.jpeg" alt="product-10">
+                    <h4>Nike Air Max 90</h4>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half-o"></i>
+                    </div>
+                    <p>$160</p>
+                </div>
+                <div class="col-4">
+                    <img src="images/latestshoes/6.jpeg" alt="product-11">
+                    <h4>Nike Air Max 95</h4>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-o"></i>
+                    </div>
+                    <p>$235</p>
+                </div>
+            </div>
+            <!-- end all products products -->
+        </div>
+
+
+        <!-- start footer -->
+        <div class="footer" id="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="footer-col-1">
+                        <h3>Download Our App</h3>
+                        <p>Download App for Android and IOS mobile phone.</p>
+                        <div class="app-logo">
+                            <img src="images/assets/play-store.png" alt="play-store">
+                            <img src="images/assets/app-store.png" alt="app-store">
+                        </div>
+                    </div>
+                    <div class="footer-col-2">
+                        <img src="images/logo.png" alt="logo-white">
+                        <p>Our Purpose is to provide Latest Sneakers from the Comfort of your Home.</p>
+                    </div>
+                    <div class="footer-col-3">
+                        <h3>Useful Links</h3>
+                        <ul>
+                            <li>Coupons</li>
+                            <li>Blog Post</li>
+                            <li>Return Policy</li>
+                            <li>Membership</li>
+                        </ul>
+                    </div>
+                    <div class="footer-col-4">
+                        <h3>Follow Us</h3>
+                        <ul>
+                            <li>Facebook</li>
+                            <li>Twitter</li>
+                            <li>Instagram</li>
+                            <li>Youtube</li>
+                        </ul>
+                    </div>
+                </div>
+                <hr>
+                <p class="copyright">Copyright
+                    <script>document.write(new Date().getFullYear())</script> - Jayesh Saini
+                </p>
+            </div>
+        </div>
+        <!-- end footer -->
+    </body>
+
+</html>
